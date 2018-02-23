@@ -1,5 +1,4 @@
-Neural Network in Supervised Learning:
-
+### Neural Network in Supervised Learning:
 | Input(x)          | Output(y)              | Application         |
 |-------------------|------------------------|---------------------|
 | Home features     | Price                  | Real Estate         |
