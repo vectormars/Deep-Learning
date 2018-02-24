@@ -12,7 +12,10 @@
 Unstructured data: image, audio, text
 
 ### Why is Deep Learning taking off? 
-Scale drives deep learning progress
+Scale drives deep learning progress.
+* Data
+* Computation
+* Algorithms
 
 Two things have to be considered to get to the high level of performance:
 1. Being able to train a big enough neural network
