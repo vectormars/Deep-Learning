@@ -11,3 +11,4 @@
 10. [The problem of local optima](Slides/C2W2L09.pptx)
 
 ### Programming Assignment:
+[Optimization methods](Codes/Optimization+methods.ipynb)
