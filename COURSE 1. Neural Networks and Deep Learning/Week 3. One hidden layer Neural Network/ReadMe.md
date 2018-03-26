@@ -7,3 +7,6 @@
 06. [Gradient descent for Neural Networks](Slides/06%20Gradient%20descent%20for%20Neural%20Networks.pptx)
 07. [Backpropagation intuition (optional)](Slides/07%20Backpropagation%20intuition%20(optional).pptx)
 08. [Random Initialization](Slides/08%20Random%20Initialization.pptx)
+
+### Programming Assignment:
+[Planar data classification with a hidden layer](Code/Planar+data+classification+with+one+hidden+layer+v5.ipynb)
