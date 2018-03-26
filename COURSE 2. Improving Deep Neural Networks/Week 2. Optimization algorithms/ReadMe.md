@@ -1,4 +1,4 @@
-### Slides
+### Slides (Optimization algorithms)
 01. [Mini-batch gradient descent](Slides/C2W2L01.pptx)
 02. [Understanding mini-batch gradient descent](Slides/C2W2L02.pptx)
 03. [Exponentially weighted averages](Slides/C2W2L03.pptx)
