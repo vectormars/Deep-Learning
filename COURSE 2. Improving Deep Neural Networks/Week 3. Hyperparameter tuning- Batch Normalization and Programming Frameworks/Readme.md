@@ -13,4 +13,4 @@
 09. [Trying a softmax classifier](Slides/C2W3L09.pptx)
 ##### Introduction to programming frameworks
 10. [Deep Learning frameworks](Slides/C2W3L10.pptx)
-11. [TensorFlow](Slides/C2W3L11.pptx)
+11. [TensorFlow](Slides/C2W3L11.pptx) ==> [Code example](Codes/TensorFlow+example.ipynb)
