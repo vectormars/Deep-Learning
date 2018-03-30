@@ -99,9 +99,32 @@ To build a tensor in TensorFlow, we can build an n-dimensional array. This can b
 | tf.cos              | cos(x)      |
 | tf.sin              | sin(x)      |
 
+TensorFlow operations listed in the table above work with tensor objects, and are performed **element-wise**. So if you want to calculate the cosine for a vector x, the TensorFlow operation will do calculations for each element in the passed tensor.      
+```    
+tensor_1d = np.array([0, 0, 0])
+tensor = tf.convert_to_tensor(tensor_1d, dtype=tf.float64)
+with tf.Session() as session:
+    print(session.run(tf.cos(tensor)))
+```     
+Output: ```[ 1.  1.  1.]```
 
-
+##### Matrix Operations
+TensorFlow supports all the most common matrix operations, like multiplication, transposing, inversion, calculating the determinant, solving linear equations, and many more.   
+[Eg](Codes/Matrix%20Operation%201.ipynb)
 
 Reference:    
 https://www.toptal.com/machine-learning/tensorflow-machine-learning-tutorial     
-https://www.datacamp.com/community/tutorials/tensorflow-tutorial    
+https://www.datacamp.com/community/tutorials/tensorflow-tutorial       
+[TensorFlow Math](https://www.tensorflow.org/versions/master/api_guides/python/math_ops#Matrix_Math_Functions)     
+
+##### Reduction
+TensorFlow supports different kinds of reduction. Reduction is an operation that removes one or more dimensions from a tensor by performing certain operations across those dimensions. A list of supported reductions for the current version of TensorFlow can be found here. We will present a few of them in the [example](Codes/Reduction_Ex_1.ipynb).
+
+##### Segmentation
+Segmentation is a process in which one of the dimensions is the process of mapping dimensions onto provided segment indexes, and the resulting elements are determined by an index row.
+
+Segmentation is actually grouping the elements under repeated indexes.
+
+<img src="images/Segmentation.png" height="350">
+
+Eg
