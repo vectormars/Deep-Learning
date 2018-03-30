@@ -111,12 +111,7 @@ Output: ```[ 1.  1.  1.]```
 ##### Matrix Operations
 TensorFlow supports all the most common matrix operations, like multiplication, transposing, inversion, calculating the determinant, solving linear equations, and many more.   
 [Eg](Codes/Matrix%20Operation%201.ipynb)
-
-Reference:    
-https://www.toptal.com/machine-learning/tensorflow-machine-learning-tutorial     
-https://www.datacamp.com/community/tutorials/tensorflow-tutorial       
-[TensorFlow Math](https://www.tensorflow.org/versions/master/api_guides/python/math_ops#Matrix_Math_Functions)     
-
+   
 ##### Reduction
 TensorFlow supports different kinds of reduction. Reduction is an operation that removes one or more dimensions from a tensor by performing certain operations across those dimensions. A list of supported reductions for the current version of TensorFlow can be found here. We will present a few of them in the [example](Codes/Reduction_Ex_1.ipynb).
 
@@ -127,4 +122,27 @@ Segmentation is actually grouping the elements under repeated indexes.
 
 <img src="images/Segmentation.png" height="350">
 
-Eg
+[Eg](Codes/Segmentation_Ex_1.ipynb)
+
+##### Sequence Utilities
+Sequence utilities include methods such as:
+* **argmin** function, which returns the index with min value across the axes of the input tensor,
+* **argmax** function, which returns the index with max value across the axes of the input tensor,
+* **setdiff**, which computes the difference between two lists of numbers or strings,
+* **where** function, which will return elements either from two passed elements x or y, which depends on the passed condition
+* **unique** function, which will return unique elements in a 1-D tensor.
+
+[Eg](Codes/Sequence_Utilities_Ex_1.ipynb)
+
+
+
+
+
+
+
+
+
+Reference:    
+https://www.toptal.com/machine-learning/tensorflow-machine-learning-tutorial     
+https://www.datacamp.com/community/tutorials/tensorflow-tutorial       
+[TensorFlow Math](https://www.tensorflow.org/versions/master/api_guides/python/math_ops#Matrix_Math_Functions)  
