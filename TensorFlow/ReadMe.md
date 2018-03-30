@@ -135,8 +135,8 @@ Sequence utilities include methods such as:
 [Eg](Codes/Sequence_Utilities_Ex_1.ipynb)
 
 
-
-
+#### Machine Learning with TensorFlow
+[Linear Regression](Codes/LinearRegression.ipynb)
 
 
 
