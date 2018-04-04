@@ -7,6 +7,11 @@ In TensorFlow, computation is described using data flow graphs.
 
 <img src="images/DataFlowGraphs.png" height="350">
 
+A TensorFlow program is typically split into two parts:
+1. Construction phase: Build a computation graph 
+2. Execution phase: Run the graph and evaluate
+
+
 ##### Constants
 ```constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
 * ```value``` is an actual constant value which will be used in further computation,
@@ -22,15 +27,36 @@ Eg1: ```z = tf.constant(5.2, name="x", dtype=tf.float32)```
 ```y = tf.Variable(x + 5, name='y')```     
 Another way to use variables in TensorFlow is in calculations where that variable isn’t trainable and can be defined in the following way
 ```k = tf.Variable(tf.add(a, b), trainable=False)```   
-[Eg1](Codes/Variable_Ex_1.ipynb), [Eg2](Codes/Variable_Ex_2.ipynb)
+[Eg1](Codes/Variable_Ex_1.ipynb), [Eg2](Codes/Variable_Ex_2.ipynb), [Eg3](Codes/Variable_Ex_3.ipynb)
 
 ##### Sessions
 A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
 
 In order to actually evaluate the nodes, we must run a computational graph within a session.
 
-##### Placeholder
-[Eg](Codes/PlaceHolder_Ex_1.ipynb)
+##### Feeding Data to the Training Algorithm: Placeholder
+if you specify **None** for a dimension, it means "any size".      
+[Eg1](Codes/PlaceHolder_Ex_1.ipynb), [Eg2](Codes/PlaceHolder_Ex_2.ipynb)
+
+Feed data to mini-batch
+```
+batch_size = 100
+n_batches = int(np.ceil(m / batch_size))
+
+def fetch_batch(epoch, batch_index, batch_size)
+    [...] # load data
+    return X_batch, y_batch
+
+with tf.Session() as sess:
+    sess.run(init)
+    
+    for epoch in range(n_epochs):
+        for batch_index in range(n_batches):
+            X_batch, y_batch = fetch_batch(epoch, batch_index, batch_size)
+            sess.run(training_op, feed_dict={X: X_batch, y: y_batch })
+            best_theta = theta.eval()
+```
+
 
 
 ##### TensorBoard 
@@ -38,22 +64,17 @@ TensorBoard is a visualization tool for analyzing data flow graphs. This can be 
 ```
 import tensorflow as tf
 
-
 x = tf.constant(-2.0, name="x", dtype=tf.float32)
 a = tf.constant(5.0, name="a", dtype=tf.float32)
 b = tf.constant(13.0, name="b", dtype=tf.float32)
 
-
 y = tf.Variable(tf.add(tf.multiply(a, x), b))
 
-
 init = tf.global_variables_initializer()
-
 
 with tf.Session() as session:
     merged = tf.summary.merge_all() // new
     writer = tf.summary.FileWriter("logs", session.graph) // new
-
 
     session.run(init)
     print session.run(y)
