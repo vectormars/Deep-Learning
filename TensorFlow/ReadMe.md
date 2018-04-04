@@ -77,7 +77,7 @@ with tf.Session() as session:
     writer = tf.summary.FileWriter("logs", session.graph) // new
 
     session.run(init)
-    print session.run(y)
+    print(session.run(y))
 ```
 Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006. 
 
@@ -159,6 +159,34 @@ Sequence utilities include methods such as:
 #### Machine Learning with TensorFlow
 [Linear Regression](Codes/LinearRegression.ipynb)
 
+
+#### Saving and Restoring Models
+* **Saving a model**: Create a **Saver** node
+```
+[...]
+init = tf.global_variables_initializer()
+saver = tf.train.Saver()
+
+with tf.Session() as sess:
+    sess.run(init)
+    
+    for epoch in range(n_epochs):
+        if epoch % 100 == :
+            save_path = saver.save(sess, "/tmp/my_model.ckpt")
+        sess.run(training_op, feed_dict={X: X_batch, y: y_batch })
+    best_theta = theta.eval()
+    save_path = saver.save(sess, "/tmp/my_model_final.ckpt")
+```
+* **Restoring a model**: 
+```
+with tf.Session() as sess:
+    saver.restore(sess, "/tmp/my_model_final.ckpt")
+```
+
+Restore only the **theta** variable under the name **weights**:  
+```
+saver = tf.train.Saver({"weights":theta})
+```
 
 
 
