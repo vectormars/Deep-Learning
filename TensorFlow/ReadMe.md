@@ -78,6 +78,8 @@ with tf.Session() as session:
 
     session.run(init)
     print(session.run(y))
+
+writer.close()
 ```
 Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006. 
 
