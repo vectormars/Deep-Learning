@@ -81,7 +81,9 @@ with tf.Session() as session:
 
 writer.close()
 ```
-Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006. 
+Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006.             
+[Eg1](Codes/TensorBoard_Ex_1.ipynb),[Eg2](Codes/TensorBoard_Ex_2.ipynb)
+
 
 #### Name scopes
 When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
