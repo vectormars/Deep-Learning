@@ -81,6 +81,13 @@ with tf.Session() as session:
 ```
 Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006. 
 
+#### Name scopes
+When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
+
+
+
+
+
 #### Mathematics with TensorFlow
 **Tensors** are the basic data structures in TensorFlow, and they represent the connecting **edges** in a dataflow graph.
 
@@ -158,7 +165,7 @@ Sequence utilities include methods such as:
 
 #### Machine Learning with TensorFlow
 [Linear Regression](Codes/LinearRegression.ipynb)
-
+[Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
 
 #### Saving and Restoring Models
 * **Saving a model**: Create a **Saver** node
