@@ -166,7 +166,7 @@ Sequence utilities include methods such as:
 
 
 #### Machine Learning with TensorFlow
-[Linear Regression](Codes/LinearRegression.ipynb)
+[Linear Regression](Codes/LinearRegression.ipynb)           
 [Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
 
 #### Saving and Restoring Models
