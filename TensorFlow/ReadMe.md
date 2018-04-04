@@ -19,8 +19,10 @@ A TensorFlow program is typically split into two parts:
 * ```shape``` is optional dimensions
 * ```name``` is an optional name for the tensor
 * ```verify_shape``` is a boolean which indicates verification of the shape of values.      
-Eg1: ```z = tf.constant(5.2, name="x", dtype=tf.float32)```    
-[Eg2](Codes/Constant_Ex_1.ipynb), [Eg3](Codes/Constant_Ex_2.ipynb)    
+Ex1: ```z = tf.constant(5.2, name="x", dtype=tf.float32)```      
+Ex2: ```a = tf.constant([2, 2], name="a")```      
+Ex3: ```b = tf.constant([[0, 1], [2, 3]], name="b")```      
+[Eg1](Codes/Constant_Ex_1.ipynb), [Eg2](Codes/Constant_Ex_2.ipynb)    
 
 ##### Variable
 ```k = tf.Variable(tf.zeros([1]), name="k")```    
