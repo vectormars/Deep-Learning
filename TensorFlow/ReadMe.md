@@ -8,8 +8,8 @@ In TensorFlow, computation is described using data flow graphs.
 <img src="images/DataFlowGraphs.png" height="350">
 
 A TensorFlow program is typically split into two parts:
-1. Construction phase: Build a computation graph 
-2. Execution phase: Run the graph and evaluate
+1. **Construction phase**: Assemble a graph      
+2. **Execution phase**: Use a session to execute operations in the graph.
 
 
 #### Constants
