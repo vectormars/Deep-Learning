@@ -69,7 +69,7 @@ Then, ```tensorboard --logdir logs/ --host=127.0.0.1```. Now TensorBoard is star
 
 #### Name scopes
 When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
-
+[Eg](Codes/Name%20scopes.ipynb)
 
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
 
