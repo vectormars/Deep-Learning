@@ -18,12 +18,8 @@ A TensorFlow program is typically split into two parts:
 
 #### Constants [(link)](Doc/Constants.md)
 
-#### Variable
-```k = tf.Variable(tf.zeros([1]), name="k")```    
-```y = tf.Variable(x + 5, name='y')```     
-Another way to use variables in TensorFlow is in calculations where that variable isn’t trainable and can be defined in the following way
-```k = tf.Variable(tf.add(a, b), trainable=False)```   
-[Eg1](Codes/Variable_Ex_1.ipynb), [Eg2](Codes/Variable_Ex_2.ipynb), [Eg3](Codes/Variable_Ex_3.ipynb)
+#### Variable [(link)](Doc/Variable.md)
+
 
 #### Sessions
 A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
