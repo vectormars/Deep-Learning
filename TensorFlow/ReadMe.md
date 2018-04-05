@@ -41,9 +41,11 @@ A TensorFlow program is typically split into two parts:
 * **Do not** use Python native types for tensors because TensorFlow has to infer Python type
 
 #### Constants [(link)](Doc/Constants.md)
+```tf.constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
 #### Variable [(link)](Doc/Variable.md)
-#### Placeholder [(link)](Doc/Placeholder.md)
 
+#### Placeholder [(link)](Doc/Placeholder.md)
+```tf.placeholder(dtype, shape=None, name=None)```
 
 #### TensorBoard 
 TensorBoard is a visualization tool for analyzing data flow graphs. This can be useful for gaining better understanding of machine learning models.
