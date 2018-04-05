@@ -64,3 +64,6 @@ W.assign(100) doesn’t assign the value 100 to W. It creates an assign op, and 
 [Assign variable](../Codes/Assign_variable.ipynb)    
 [Assign add/sub](../Codes/Assign_add_sub.ipynb)
 
+#### When is a variable initialized? When is it destroyed?
+A variable is initialized when you call its initializer, and it is destroyed when the session ends. In distributed TensorFlow, variables live in containers on the cluster, so closing a session will **not** destroy the variable. To destroy a variable, you need to clear its container.
+
