@@ -68,23 +68,29 @@ Then, ```tensorboard --logdir logs/ --host=127.0.0.1```. Now TensorBoard is star
 
 
 #### Name scopes
-When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
+When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.     
 [Eg](Codes/Name%20scopes.ipynb)
 
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
 
+####  Modularity
+Avoid repetitive code    
+[Eg](Codes/Modularity.ipynb)
 
+#### Sharing variable
+* If you want to share a variable between various components of your graph, one simple option is to create it first, then pass it as a parameter to the functions that need it.
+* Another option is to set the shared variable as an attribute of the function upon the first call.    
+[Eg](Codes/Sharing%20Variables.ipynb)
+
+#### Saving and Restoring Models
+* **Saving a model**: Create a **Saver** node
+* **Restoring a model**    
+[Eg](Codes/Saving%20and%20restoring%20a%20model.ipynb)
 
 #### Machine Learning with TensorFlow
 [Linear Regression](Codes/LinearRegression.ipynb)     
 [Gradient Descent](Codes/Batch%20Gradient%20Descent.ipynb)       
 [Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
-
-#### Saving and Restoring Models
-* **Saving a model**: Create a **Saver** node
-* **Restoring a model**    
-[Eg](Saving%20and%20restoring%20a%20model.ipynb)
-
 
 
 
