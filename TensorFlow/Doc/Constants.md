@@ -47,3 +47,9 @@ Tensor objects are not iterable
 ```tf.multinomial(logits, num_samples, seed=None, name=None)```     
 ```tf.random_gamma(shape, alpha, beta=None, dtype=tf.float32, seed=None, name=None)```     
 
+### What’s wrong with constants?    
+Constants are stored in the graph definition. This makes loading graphs expensive when constants are big.    
+Therefore, Only use constants for primitive types.    
+Use variables or readers for more data that requires more memory
+
+
