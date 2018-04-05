@@ -11,10 +11,12 @@ A TensorFlow program is typically split into two parts:
 1. **Construction phase**: Assemble a graph      
 2. **Execution phase**: Use a session to execute operations in the graph.
 
+#### TensorFlow Data Types
+* TensorFlow takes Python natives types: boolean, numeric (int, float), strings   
+* TensorFlow integrates seamlessly with **NumPy** 
+* **Do not** use Python native types for tensors because TensorFlow has to infer Python type
 
 #### Constants [(link)](Doc/Constants.md)
-
-
 
 #### Variable
 ```k = tf.Variable(tf.zeros([1]), name="k")```    
