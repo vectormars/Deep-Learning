@@ -47,6 +47,8 @@ A TensorFlow program is typically split into two parts:
 #### Placeholder [(link)](Doc/Placeholder.md)
 ```tf.placeholder(dtype, shape=None, name=None)```
 
+#### Lazy loading [(link)](Doc/Lazy loading.md)  
+
 #### TensorBoard 
 TensorBoard is a visualization tool for analyzing data flow graphs. This can be useful for gaining better understanding of machine learning models.
 ```
