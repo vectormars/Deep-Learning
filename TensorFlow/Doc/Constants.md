@@ -1,5 +1,5 @@
 ### Constants
-```constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
+```tf.constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
 * ```value``` is an actual constant value which will be used in further computation,
 * ```dtype``` is the data type parameter (e.g., float32/64, int8/16, etc.)
 * ```shape``` is optional dimensions
