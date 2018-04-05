@@ -90,12 +90,13 @@ Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running o
 #### Name scopes
 When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
 
-#### Mathematics with TensorFlow [link](Doc/Mathematics%20with%20TensorFlow.md)
+#### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
 
 
 
 #### Machine Learning with TensorFlow
-[Linear Regression](Codes/LinearRegression.ipynb)           
+[Linear Regression](Codes/LinearRegression.ipynb)     
+[Gradient Descent](Codes/Batch%20Gradient%20Descent.ipynb)       
 [Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
 
 #### Saving and Restoring Models
