@@ -63,8 +63,8 @@ with tf.Session() as session:
 
 writer.close()
 ```
-Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running on the default port 6006.             
-[Eg1](Codes/TensorBoard_Ex_1.ipynb),[Eg2](Codes/TensorBoard_Ex_2.ipynb)
+Then, ```tensorboard --logdir logs/ --host=127.0.0.1```. Now TensorBoard is started and running on the default port 6006 (Type localhost:6006 in chrome).                  
+[Eg1](Codes/TensorBoard_Ex_1.ipynb), [Eg2](Codes/TensorBoard_Ex_2.ipynb), [Eg3](Codes/TensorBoard_Ex_3.ipynb)
 
 
 #### Name scopes
