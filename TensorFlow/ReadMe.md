@@ -7,6 +7,14 @@ In TensorFlow, computation is described using data flow graphs.
 
 <img src="images/DataFlowGraphs.png" height="350">
 
+### What’s a tensor?
+An n-dimensional array    
+* 0-d tensor: scalar (number)
+* 1-d tensor: vector
+* 2-d tensor: matrix
+* and so on
+<img src="images/tensors.png" height="350">
+
 A TensorFlow program is typically split into two parts:
 1. **Construction phase**: Assemble a graph      
 2. **Execution phase**: Use a **session** to execute operations in the graph.
