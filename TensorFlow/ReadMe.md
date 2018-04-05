@@ -41,9 +41,7 @@ A TensorFlow program is typically split into two parts:
 * **Do not** use Python native types for tensors because TensorFlow has to infer Python type
 
 #### Constants [(link)](Doc/Constants.md)
-
 #### Variable [(link)](Doc/Variable.md)
-
 #### Placeholder [(link)](Doc/Placeholder.md)
 
 
