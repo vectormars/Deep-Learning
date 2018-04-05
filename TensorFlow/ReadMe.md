@@ -44,10 +44,8 @@ A TensorFlow program is typically split into two parts:
 
 #### Variable [(link)](Doc/Variable.md)
 
-#### Feeding Data to the Training Algorithm: Placeholder
-If you specify **None** for a dimension, it means "any size".      
-[Eg1](Codes/PlaceHolder_Ex_1.ipynb), [Eg2](Codes/PlaceHolder_Ex_2.ipynb)     
-[Feed data to mini-batch](Codes/Feed%20data%20to%20mini-batch.ipynb)    
+#### Placeholder [(link)](Doc/Placeholder.md)
+
 
 #### TensorBoard 
 TensorBoard is a visualization tool for analyzing data flow graphs. This can be useful for gaining better understanding of machine learning models.
