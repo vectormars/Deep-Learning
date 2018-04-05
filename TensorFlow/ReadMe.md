@@ -7,6 +7,17 @@ In TensorFlow, computation is described using data flow graphs.
 
 <img src="images/DataFlowGraphs.png" height="350">
 
+Main benefits and drawbacks of creating a computation graph rather than directly executing the computation:
+* Main benefits     
+  * TensorFlow can automatically compute the gradients for you (use the reverse-mode autodiff)
+  * TensorFlow can take care of running the operations in parallel in different threads
+  * It makes it easier to run the same model across different devices
+  * It simplifier introspection-for example, to view the model in TensorBoard
+* Main drawbacks:
+  * It makes the learning curve steeper
+  * It makes step-by-step debugging harder
+
+
 ### What’s a tensor?
 An n-dimensional array    
 * 0-d tensor: scalar (number)
