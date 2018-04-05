@@ -9,7 +9,12 @@ In TensorFlow, computation is described using data flow graphs.
 
 A TensorFlow program is typically split into two parts:
 1. **Construction phase**: Assemble a graph      
-2. **Execution phase**: Use a session to execute operations in the graph.
+2. **Execution phase**: Use a **session** to execute operations in the graph.
+
+##### Sessions
+A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
+
+In order to actually evaluate the nodes, we must run a computational graph within a session.
 
 #### TensorFlow Data Types
 * TensorFlow takes Python natives types: boolean, numeric (int, float), strings   
@@ -19,12 +24,6 @@ A TensorFlow program is typically split into two parts:
 #### Constants [(link)](Doc/Constants.md)
 
 #### Variable [(link)](Doc/Variable.md)
-
-
-#### Sessions
-A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
-
-In order to actually evaluate the nodes, we must run a computational graph within a session.
 
 #### Feeding Data to the Training Algorithm: Placeholder
 If you specify **None** for a dimension, it means "any size".      
