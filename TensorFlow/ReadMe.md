@@ -12,9 +12,9 @@ A TensorFlow program is typically split into two parts:
 2. **Execution phase**: Use a **session** to execute operations in the graph.
 
 ##### Sessions
-A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
-
-In order to actually evaluate the nodes, we must run a computational graph within a session.
+* A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
+* In order to actually evaluate the nodes, we must run a computational graph within a session.
+* Each session maintains its own copy of variable
 
 #### TensorFlow Data Types
 * TensorFlow takes Python natives types: boolean, numeric (int, float), strings   
