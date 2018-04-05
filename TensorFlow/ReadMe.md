@@ -12,7 +12,7 @@ A TensorFlow program is typically split into two parts:
 2. Execution phase: Run the graph and evaluate
 
 
-##### Constants
+#### Constants
 ```constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
 * ```value``` is an actual constant value which will be used in further computation,
 * ```dtype``` is the data type parameter (e.g., float32/64, int8/16, etc.)
@@ -24,44 +24,24 @@ Ex2: ```a = tf.constant([2, 2], name="a")```
 Ex3: ```b = tf.constant([[0, 1], [2, 3]], name="b")```      
 [Eg1](Codes/Constant_Ex_1.ipynb), [Eg2](Codes/Constant_Ex_2.ipynb)    
 
-##### Variable
+#### Variable
 ```k = tf.Variable(tf.zeros([1]), name="k")```    
 ```y = tf.Variable(x + 5, name='y')```     
 Another way to use variables in TensorFlow is in calculations where that variable isn’t trainable and can be defined in the following way
 ```k = tf.Variable(tf.add(a, b), trainable=False)```   
 [Eg1](Codes/Variable_Ex_1.ipynb), [Eg2](Codes/Variable_Ex_2.ipynb), [Eg3](Codes/Variable_Ex_3.ipynb)
 
-##### Sessions
+#### Sessions
 A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
 
 In order to actually evaluate the nodes, we must run a computational graph within a session.
 
-##### Feeding Data to the Training Algorithm: Placeholder
+#### Feeding Data to the Training Algorithm: Placeholder
 if you specify **None** for a dimension, it means "any size".      
-[Eg1](Codes/PlaceHolder_Ex_1.ipynb), [Eg2](Codes/PlaceHolder_Ex_2.ipynb)
+[Eg1](Codes/PlaceHolder_Ex_1.ipynb), [Eg2](Codes/PlaceHolder_Ex_2.ipynb)     
+[Feed data to mini-batch](Codes/Feed%20data%20to%20mini-batch.ipynb)    
 
-Feed data to mini-batch
-```
-batch_size = 100
-n_batches = int(np.ceil(m / batch_size))
-
-def fetch_batch(epoch, batch_index, batch_size)
-    [...] # load data
-    return X_batch, y_batch
-
-with tf.Session() as sess:
-    sess.run(init)
-    
-    for epoch in range(n_epochs):
-        for batch_index in range(n_batches):
-            X_batch, y_batch = fetch_batch(epoch, batch_index, batch_size)
-            sess.run(training_op, feed_dict={X: X_batch, y: y_batch })
-            best_theta = theta.eval()
-```
-
-
-
-##### TensorBoard 
+#### TensorBoard 
 TensorBoard is a visualization tool for analyzing data flow graphs. This can be useful for gaining better understanding of machine learning models.
 ```
 import tensorflow as tf
