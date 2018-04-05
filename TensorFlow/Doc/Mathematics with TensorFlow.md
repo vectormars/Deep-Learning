@@ -9,10 +9,10 @@ A tensor simply identifies a multidimensional array or list. The tensor structur
 
 To build a tensor in TensorFlow, we can build an n-dimensional array. This can be done easily by using the NumPy library, or by converting a Python n-dimensional array into a TensorFlow tensor.
 
-<img src="images/tensors.png" height="350">
+<img src="../images/tensors.png" height="350">
 
-[Eg1](Codes/Build%20a%201-d%20tensor.ipynb): Build a 1-d tensor, by using a NumPy array   
-[Eg2](Codes/Build%20a%202-d%20tensor.ipynb): Build a 2-d tensor(matrix), by using a NumPy array   
+[Eg1](../Codes/Build%20a%201-d%20tensor.ipynb): Build a 1-d tensor, by using a NumPy array   
+[Eg2](../Codes/Build%20a%202-d%20tensor.ipynb): Build a 2-d tensor(matrix), by using a NumPy array   
 
 ##### Tensor Operations
 
@@ -48,19 +48,19 @@ Output: ```[ 1.  1.  1.]```
 
 ##### Matrix Operations
 TensorFlow supports all the most common matrix operations, like multiplication, transposing, inversion, calculating the determinant, solving linear equations, and many more.   
-[Eg](Codes/Matrix%20Operation%201.ipynb)
+[Eg](../Codes/Matrix%20Operation%201.ipynb)
    
 ##### Reduction
-TensorFlow supports different kinds of reduction. Reduction is an operation that removes one or more dimensions from a tensor by performing certain operations across those dimensions. A list of supported reductions for the current version of TensorFlow can be found here. We will present a few of them in the [example](Codes/Reduction_Ex_1.ipynb).
+TensorFlow supports different kinds of reduction. Reduction is an operation that removes one or more dimensions from a tensor by performing certain operations across those dimensions. A list of supported reductions for the current version of TensorFlow can be found here. We will present a few of them in the [example](../Codes/Reduction_Ex_1.ipynb).
 
 ##### Segmentation
 Segmentation is a process in which one of the dimensions is the process of mapping dimensions onto provided segment indexes, and the resulting elements are determined by an index row.
 
 Segmentation is actually grouping the elements under repeated indexes.
 
-<img src="images/Segmentation.png" height="350">
+<img src="../images/Segmentation.png" height="350">
 
-[Eg](Codes/Segmentation_Ex_1.ipynb)
+[Eg](../Codes/Segmentation_Ex_1.ipynb)
 
 ##### Sequence Utilities
 Sequence utilities include methods such as:
@@ -70,4 +70,4 @@ Sequence utilities include methods such as:
 * **where** function, which will return elements either from two passed elements x or y, which depends on the passed condition
 * **unique** function, which will return unique elements in a 1-D tensor.
 
-[Eg](Codes/Sequence_Utilities_Ex_1.ipynb)
+[Eg](../Codes/Sequence_Utilities_Ex_1.ipynb)
