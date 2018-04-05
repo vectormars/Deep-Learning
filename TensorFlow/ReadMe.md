@@ -11,10 +11,21 @@ A TensorFlow program is typically split into two parts:
 1. **Construction phase**: Assemble a graph      
 2. **Execution phase**: Use a **session** to execute operations in the graph.
 
-##### Sessions
+#### Sessions
 * A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
 * In order to actually evaluate the nodes, we must run a computational graph within a session.
 * Each session maintains its own copy of variable
+* Session vs InteractiveSession
+ * You sometimes see InteractiveSession instead of Session. The only difference is an InteractiveSession makes itself the default       
+    ```
+    sess = tf.InteractiveSession()
+    a = tf.constant(5.0)
+    b = tf.constant(6.0)
+    c = a * b
+    # We can just use 'c.eval()' without specifying the context 'sess'
+    print(c.eval())
+    sess.close()
+    ```
 
 #### TensorFlow Data Types
 * TensorFlow takes Python natives types: boolean, numeric (int, float), strings   
