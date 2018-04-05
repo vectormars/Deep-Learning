@@ -37,7 +37,7 @@ A session encapsulates the control and state of the TensorFlow runtime. A sessio
 In order to actually evaluate the nodes, we must run a computational graph within a session.
 
 #### Feeding Data to the Training Algorithm: Placeholder
-if you specify **None** for a dimension, it means "any size".      
+If you specify **None** for a dimension, it means "any size".      
 [Eg1](Codes/PlaceHolder_Ex_1.ipynb), [Eg2](Codes/PlaceHolder_Ex_2.ipynb)     
 [Feed data to mini-batch](Codes/Feed%20data%20to%20mini-batch.ipynb)    
 
@@ -70,6 +70,7 @@ Then, ```tensorboard --logdir logs/```. Now TensorBoard is started and running o
 #### Name scopes
 When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.
 
+
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
 
 
@@ -81,31 +82,8 @@ When dealing with more complex models such as neural network, the graph can easi
 
 #### Saving and Restoring Models
 * **Saving a model**: Create a **Saver** node
-```
-[...]
-init = tf.global_variables_initializer()
-saver = tf.train.Saver()
-
-with tf.Session() as sess:
-    sess.run(init)
-    
-    for epoch in range(n_epochs):
-        if epoch % 100 == :
-            save_path = saver.save(sess, "/tmp/my_model.ckpt")
-        sess.run(training_op, feed_dict={X: X_batch, y: y_batch })
-    best_theta = theta.eval()
-    save_path = saver.save(sess, "/tmp/my_model_final.ckpt")
-```
-* **Restoring a model**: 
-```
-with tf.Session() as sess:
-    saver.restore(sess, "/tmp/my_model_final.ckpt")
-```
-
-Restore only the **theta** variable under the name **weights**:  
-```
-saver = tf.train.Saver({"weights":theta})
-```
+* **Restoring a model**    
+[Eg](Saving%20and%20restoring%20a%20model.ipynb)
 
 
 
