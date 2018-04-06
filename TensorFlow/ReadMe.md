@@ -113,7 +113,8 @@ Avoid repetitive code
 [Eg](Codes/Saving%20and%20restoring%20a%20model.ipynb)
 
 #### Machine Learning with TensorFlow
-[Linear Regression](Codes/LinearRegression.ipynb)     
+[Linear Regression 1](Codes/Linear%20regression%20Stanford%20CS20.ipynb)     
+[Linear Regression 2](Codes/LinearRegression.ipynb)     
 [Gradient Descent](Codes/Batch%20Gradient%20Descent.ipynb)       
 [Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
 
