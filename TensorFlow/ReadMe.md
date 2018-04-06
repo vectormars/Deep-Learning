@@ -54,6 +54,11 @@ A TensorFlow program is typically split into two parts:
 #### Constants [(link)](Doc/Constants.md)
 ```tf.constant(value, dtype=None, shape=None, name='Const', verify_shape=False)```
 #### Variable [(link)](Doc/Variable.md)
+tf.constant and tf.Variable:
+* Constant values are stored in the graph definition
+* Sessions allocate memory to store variable values
+
+
 
 #### Placeholder [(link)](Doc/Placeholder.md)
 ```tf.placeholder(dtype, shape=None, name=None)```
