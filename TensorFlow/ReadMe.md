@@ -58,10 +58,11 @@ tf.constant and tf.Variable:
 * Constant values are stored in the graph definition
 * Sessions allocate memory to store variable values
 
-
-
-#### Placeholder [(link)](Doc/Placeholder.md)
+#### Placeholder and feed_dict [(link)](Doc/Placeholder.md)
 ```tf.placeholder(dtype, shape=None, name=None)```
+* Feed values into placeholders by dictionary (feed_dict)
+* You can feed values in variables too
+
 
 #### Lazy loading [(link)](Doc/Lazy%20loading.md)  
 
