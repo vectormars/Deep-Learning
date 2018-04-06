@@ -116,6 +116,19 @@ Avoid repetitive code
 * **Restoring a model**    
 [Eg](Codes/Saving%20and%20restoring%20a%20model.ipynb)
 
+
+#### List of optimizers in TF
+1. tf.train.GradientDescentOptimizer
+2. tf.train.AdagradOptimizer
+3. tf.train.MomentumOptimizer
+4. tf.train.AdamOptimizer
+5. tf.train.ProximalGradientDescentOptimizer
+6. tf.train.ProximalAdagradOptimizer
+7. tf.train.RMSPropOptimizer
+8. And more
+
+
+
 #### Machine Learning with TensorFlow
 [Linear Regression 1](Codes/Linear%20regression%20Stanford%20CS20.ipynb)     
 [Linear Regression 2](Codes/LinearRegression.ipynb)     
