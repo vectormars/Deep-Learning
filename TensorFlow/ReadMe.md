@@ -128,8 +128,25 @@ Avoid repetitive code
 8. And more
 
 
+## Overall structure of a model in TensorFlow
+### Phase 1: Assemble graph
+1. Define placeholders for input and output
+2. Define the weights
+3. Define the inference model
+4. Define loss function
+5. Define optimizer
 
-#### Machine Learning with TensorFlow
+### Phase 2: Execute the computation
+1. Initialize all model variables for the first time.
+2. Feed in the training data. Might involve randomizing the order of data samples.
+3. Execute the inference model on the training data, so it calculates for each training input
+example the output with the current model parameters.
+4. Compute the cost
+5. Adjust the model parameters to minimize/maximize the cost depending on the model.
+
+
+
+## Machine Learning Examples in TensorFlow
 [Linear Regression 1](Codes/Linear%20regression%20Stanford%20CS20.ipynb)     
 [Linear Regression 2](Codes/LinearRegression.ipynb)     
 [Gradient Descent](Codes/Batch%20Gradient%20Descent.ipynb)       
@@ -137,7 +154,7 @@ Avoid repetitive code
 
 
 
-Reference:    
+## Reference:    
 https://www.toptal.com/machine-learning/tensorflow-machine-learning-tutorial     
 https://www.datacamp.com/community/tutorials/tensorflow-tutorial       
 [TensorFlow Math](https://www.tensorflow.org/versions/master/api_guides/python/math_ops#Matrix_Math_Functions)  
