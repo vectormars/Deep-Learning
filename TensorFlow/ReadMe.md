@@ -150,6 +150,7 @@ example the output with the current model parameters.
 ## Machine Learning Examples in TensorFlow
 [Linear Regression 1](Codes/Linear%20regression%20Stanford%20CS20.ipynb)     
 [Linear Regression 2](Codes/LinearRegression.ipynb)     
+[Logistic Regression 1](Codes/Logistic%20regression%20Stanford%20CS20.ipynb)      
 [Gradient Descent](Codes/Batch%20Gradient%20Descent.ipynb)       
 [Up_and_running_with_tensorflow](Codes/Up_and_running_with_tensorflow.ipynb)
 
