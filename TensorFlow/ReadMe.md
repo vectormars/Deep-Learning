@@ -24,7 +24,9 @@ An n-dimensional array
 * 1-d tensor: vector
 * 2-d tensor: matrix
 * and so on
-<img src="images/tensors.png" height="350">
+<img src="images/tensors.png" height="350">        
+
+__________________________________________________________________________________________________
 
 ### TensorFlow program
 A TensorFlow program is typically split into two parts:
@@ -131,7 +133,7 @@ Avoid repetitive code
 7. tf.train.RMSPropOptimizer
 8. And more
 
-
+__________________________________________________________________________________________________
 ## Overall structure of a model in TensorFlow
 ### Phase 1: Assemble graph
 1. Define placeholders for input and output
@@ -148,8 +150,21 @@ example the output with the current model parameters.
 4. Compute the cost
 5. Adjust the model parameters to minimize/maximize the cost depending on the model.
 
+### Structure the model
+**Purpose**: Need models to be reusable    
+**Solution**: Use object oriented programming     
+Eg
+
+### Manage your model [(link)](Doc/Manage_model.md)
+```tf.train.Saver```
+
+### Make summary
+```tf.summary```
+Visualize our summary statistics during our training
 
 
+
+__________________________________________________________________________________________________
 ## Machine Learning Examples in TensorFlow
 [Linear Regression 1](Codes/Linear%20regression%20Stanford%20CS20.ipynb)     
 [Linear Regression 2](Codes/LinearRegression.ipynb)     
