@@ -1,7 +1,7 @@
 ### Data Flow Graphs
 In TensorFlow, computation is described using data flow graphs.
-* Each **node** of the graph represents an instance of a mathematical operation (like addition, division, or multiplication)
-* Each **edge** is a multi-dimensional data set (tensor) on which the operations are performed.
+* Each **node** of the graph represents an instance of a **mathematical operation** (like addition, division, or multiplication)
+* Each **edge** is a multi-dimensional **data set** (tensor) on which the operations are performed.
   * **Normal edges**, transfer data structure (tensors) where it is possible that the output of one operation becomes the input for another operation
   * **Special edges**, which are used to control dependency between two nodes to set the order of operation where one node waits for another to finish.
 
@@ -26,6 +26,7 @@ An n-dimensional array
 * and so on
 <img src="images/tensors.png" height="350">
 
+### TensorFlow program
 A TensorFlow program is typically split into two parts:
 1. **Construction phase**: Assemble a graph      
 2. **Execution phase**: Use a **session** to execute operations in the graph.
@@ -34,8 +35,8 @@ A TensorFlow program is typically split into two parts:
 * A session encapsulates the control and state of the TensorFlow runtime. A session without parameters will use the default graph created in the current session, otherwise the session class accepts a graph parameter, which is used in that session to be executed.
 * In order to actually evaluate the nodes, we must run a computational graph within a session.
 * Each session maintains its own copy of variable
-* Session vs InteractiveSession
- * You sometimes see InteractiveSession instead of Session. The only difference is an InteractiveSession makes itself the default       
+* Session vs InteractiveSession      
+  You sometimes see InteractiveSession instead of Session. The only difference is an InteractiveSession makes itself the default       
     ```
     sess = tf.InteractiveSession()
     a = tf.constant(5.0)
