@@ -25,3 +25,5 @@ if ckpt and ckpt.model_checkpoint_path:
 ```
     1. checkpoint keeps track of the latest checkpoint
     2. Safeguard to restore checkpoints only when there are checkpoints
+
+[Eg](../Codes/Saving%20and%20restoring%20a%20model.ipynb)
