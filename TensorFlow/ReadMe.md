@@ -154,7 +154,7 @@ Eg
 ```tf.train.Saver```
 
 ### Make summary
-```tf.summary```
+```tf.summary```      
 Visualize our summary statistics during our training
 
 
