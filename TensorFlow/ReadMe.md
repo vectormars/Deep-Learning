@@ -97,8 +97,9 @@ Then, ```tensorboard --logdir logs/ --host=127.0.0.1```. Now TensorBoard is star
 [Eg1](Codes/TensorBoard_Ex_1.ipynb), [Eg2](Codes/TensorBoard_Ex_2.ipynb), [Eg3](Codes/TensorBoard_Ex_3.ipynb)
 
 
-#### Name scopes
+#### Name scopes (Group nodes together)
 When dealing with more complex models such as neural network, the graph can easily become cluttered with thousands of nodes. To avoid this, you can create *name scopes* tp group related nodes.     
+```with tf.name_scope("my_name") as my_name:```      
 [Eg](Codes/Name%20scopes.ipynb)
 
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
