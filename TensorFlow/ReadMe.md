@@ -158,6 +158,9 @@ Eg
 Visualize our summary statistics during our training
 
 ### Control Randomization
+1. Op level random seed: each op keeps its own seed     
+2. Graph level seed     
+[Eg](Codes/Control_Randomization.ipynb)
 
 __________________________________________________________________________________________________
 ## Machine Learning Examples in TensorFlow
