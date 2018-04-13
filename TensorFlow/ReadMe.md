@@ -60,6 +60,10 @@ A TensorFlow program is typically split into two parts:
 ```
 tf.Variable(initial_value=None, trainable=True, collections=None, validate_shape=True, caching_device=None, name=None, variable_def=None, dtype=None, expected_shape=None, import_scope=None)
 ```
+#### Sharing variable
+* If you want to share a variable between various components of your graph, one simple option is to create it first, then pass it as a parameter to the functions that need it.
+* Another option is to set the shared variable as an attribute of the function upon the first call.    
+[Eg](Codes/Sharing%20Variables.ipynb)
 
 tf.constant and tf.Variable:
 * Constant values are stored in the graph definition
@@ -112,15 +116,6 @@ When dealing with more complex models such as neural network, the graph can easi
 Avoid repetitive code    
 [Eg](Codes/Modularity.ipynb)
 
-#### Sharing variable
-* If you want to share a variable between various components of your graph, one simple option is to create it first, then pass it as a parameter to the functions that need it.
-* Another option is to set the shared variable as an attribute of the function upon the first call.    
-[Eg](Codes/Sharing%20Variables.ipynb)
-
-#### Saving and Restoring Models
-* **Saving a model**: Create a **Saver** node
-* **Restoring a model**    
-[Eg](Codes/Saving%20and%20restoring%20a%20model.ipynb)
 
 
 #### List of optimizers in TF
