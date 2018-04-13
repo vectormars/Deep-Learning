@@ -153,11 +153,11 @@ Eg
 ### Manage your model [(link)](Doc/Manage_model.md)
 ```tf.train.Saver```
 
-### Make summary
+### Make summary [(link)](Doc/make_summary.md)
 ```tf.summary```      
 Visualize our summary statistics during our training
 
-
+### Control Randomization
 
 __________________________________________________________________________________________________
 ## Machine Learning Examples in TensorFlow
