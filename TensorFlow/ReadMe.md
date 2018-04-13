@@ -103,8 +103,9 @@ When dealing with more complex models such as neural network, the graph can easi
 [Eg](Codes/Name%20scopes.ipynb)
 
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
-
-####  Modularity
+#### Gradient 
+[Eg](Codes/tf_Gradient.ipynb)   
+#### Modularity
 Avoid repetitive code    
 [Eg](Codes/Modularity.ipynb)
 
