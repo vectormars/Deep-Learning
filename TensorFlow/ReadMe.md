@@ -104,6 +104,7 @@ When dealing with more complex models such as neural network, the graph can easi
 
 #### Mathematics with TensorFlow [(link)](Doc/Mathematics%20with%20TensorFlow.md)
 #### Gradient 
+```tf.gradients(y, [xs])```    
 [Eg](Codes/tf_Gradient.ipynb)   
 #### Modularity
 Avoid repetitive code    
